@@ -1,0 +1,9 @@
+{
+  "name": "biroagent-preview",
+  "private": true,
+  "description": "BiroAgent.ro conversion preview",
+  "scripts": {
+    "start": "python3 -m http.server 8765",
+    "dev": "python3 -m http.server 8765"
+  }
+}
