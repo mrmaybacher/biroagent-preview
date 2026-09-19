@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BiroAgent.ro — Acte fără stres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a365d;--gold:#c9930a;--bg:#f8f6f1;--text:#1a1810;--muted:#6b6558;--line:#cec8ba}
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--text)}
+.urgent{position:sticky;top:0;z-index:20;background:#9a3412;color:#fff7ed;text-align:center;padding:10px 16px;font-weight:600;font-size:14px}
+.urgent a{color:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto;padding:16px 24px}
+.brand{font-family:'DM Serif Display',serif;color:var(--navy);font-size:20px;text-decoration:none}
+.hero{text-align:center;padding:56px 24px 32px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(36px,6vw,64px);line-height:1.05;color:var(--navy);margin:0 0 16px}
+.accent{color:var(--gold);font-style:italic}
+.sub{max-width:560px;margin:0 auto 28px;color:var(--muted);font-size:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:600;border:0;cursor:pointer}
+.wrap{max-width:1100px;margin:0 auto;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:inherit}
+.card.hot{outline:2px solid var(--gold)}
+.badge{display:inline-block;background:#9a3412;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;margin-bottom:8px}
+h2{font-family:'DM Serif Display',serif;font-size:36px;text-align:center;color:#111}
+.center{text-align:center;color:var(--muted)}
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin:24px auto}
+@media(max-width:700px){.pricing{grid-template-columns:1fr}}
+.plan{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.plan.paid{background:var(--navy);color:#fff}
+.price{font-size:42px;font-weight:700;margin:8px 0}
+ul{padding-left:18px;line-height:1.7}
+footer{padding:40px 24px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="urgent">Termen CAEN Rev.3 pentru PFA: 25 septembrie 2026 — mai sunt <span id="d">7</span> zile. <a href="#caen">Pregătește dosarul acum →</a></div>
+<nav>
+  <a class="brand" href="/">BiroAgent.ro</a>
+  <a class="btn" href="#pret">Pachet CAEN — 79 lei</a>
+</nav>
+<section class="hero">
+  <h1>Nu mai pierde zile<br><span class="accent">la ghișeu.</span></h1>
+  <p class="sub">Lista de acte e gratuită. Dacă vrei dosarul completat și ghidul de depunere pe portalul oficial, plătești 79 lei o dată.</p>
+  <a class="btn" href="#servicii">Verifică documentele — gratuit</a>
+</section>
+<section class="wrap" id="servicii">
+  <p class="center">SERVICII</p>
+  <h2>Proceduri acoperite</h2>
+  <div class="grid" style="margin-top:24px">
+    <a class="card hot" id="caen" href="https://biroagent.ro/pfa/">
+      <span class="badge">TERMEN 25 SEP</span>
+      <h3>Actualizare CAEN Rev.3</h3>
+      <p>PFA înainte de 2025? Anexa 2b pe myportal.onrc.ro până pe 25 septembrie. Codul greșit îți schimbă taxele.</p>
+      <strong>79 lei pachet</strong>
+    </a>
+    <a class="card" href="https://biroagent.ro/auto/"><h3>Înmatriculare Auto</h3><p>Documente, costuri, programare DGPCI.</p></a>
+    <a class="card" href="https://biroagent.ro/constructii/"><h3>Autorizație Construcție</h3><p>Urbanism, avize, extras CF.</p></a>
+    <a class="card" href="https://biroagent.ro/pfa/"><h3>Înființare PFA / SRL</h3><p>ONRC, CAEN, sediu.</p></a>
+    <a class="card" href="https://biroagent.ro/anaf/"><h3>Declarații ANAF</h3><p>Declarația unică, termene.</p></a>
+    <a class="card" href="https://biroagent.ro/identitate/"><h3>Carte de Identitate</h3><p>SPCLEP, domiciliu, prima CI.</p></a>
+  </div>
+</section>
+<section class="wrap" id="pret">
+  <h2>Dacă vrei să mergi mai departe</h2>
+  <p class="center">Informațiile de bază rămân gratuite.</p>
+  <div class="pricing">
+    <div class="plan">
+      <div>Plan gratuit</div>
+      <div class="price">0 RON</div>
+      <ul><li>Lista de documente</li><li>Costuri și termene</li><li>Greșeli frecvente</li></ul>
+    </div>
+    <div class="plan paid">
+      <div>Pachet procedură</div>
+      <div class="price">79 RON</div>
+      <ul><li>PDF-uri pre-completate</li><li>Pași pe portalul oficial</li><li>Plată unică</li></ul>
+      <p><a class="btn" style="background:#c9930a" href="https://biroagentro.lemonsqueezy.com/checkout/buy/d5a87fe3-8958-412e-9fdc-fc258670947c?embed=1">Obține pachetul</a></p>
+    </div>
+  </div>
+</section>
+<footer>BiroAgent.ro — ghid, nu înlocuitor al instituției.</footer>
+<script>
+var end=new Date('2026-09-25T23:59:59+03:00');
+document.getElementById('d').textContent=Math.max(0,Math.ceil((end-new Date())/86400000));
+</script>
+</body>
+</html>
